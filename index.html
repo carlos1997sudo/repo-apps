@@ -1,32 +1,39 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Apps</title>
-    <link rel="stylesheet" href="./assets/style.css" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>PasswordGen</title>
   </head>
+
   <body>
-    <header class="header"></header>
-    <main class="main">
-      <div class="first-card-container">
-        <div class="first-card-content">
-          <div class="first-card-element">
-            <a class="element" href="#">
-              <img
-                src="https://th.bing.com/th/id/R.1f9b41b836814544ee57858e93d0553c?rik=ZzkLEZ8WveYi5A&pid=ImgRaw&r=0"
-                alt="icone-calculadora"
-                srcset=""
-              /><span>Calculadora</span></a
-            >
-          </div>
-        </div>
+    <section class="container">
+      <h1>Gerador de Senha</h1>
+      <div class="senha-gerada">
+        <p class="password"></p>
       </div>
-    </main>
-    <footer class="footer">
-      <h1 class="text-footer">Desenvolvido por</h1>
-      <p>Carlos Henrique O. Silva</p>
-    </footer>
+      <p>Selecione as opções</p>
+      Quantidade de grupos <br>
+       mínimo 1, máximo 5<br>
+      <input class="valueInput" type="number" min="1" max="5" value="3"/>
+      <br />
+      Adicionar maiúsculas
+      <input type="checkbox" class="chk-maiusculas" checked />
+      <br />
+      Adicionar minúsculas
+      <input type="checkbox" class="chk-minusculas" checked />
+      <br />
+      Adicionar números
+      <input type="checkbox" class="chk-numeros" checked />
+      <br />
+      Adicionar símbolos
+      <input type="checkbox" class="chk-simbolos" checked />
+      <br />
+      <button class="gerarSenha">Gerar Senha</button>
+      <button class="copyPasswordGen">Copiar!</button>
+    </section>
+
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
